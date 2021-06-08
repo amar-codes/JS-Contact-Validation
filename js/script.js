@@ -3,10 +3,8 @@ let defaultCountry = 'BA';
 function checkForm() {
     let inputNumber = document.getElementById('form-number').value;
     let constructorOptions = {
-            defaultCountry,
-        }
-        // Kreiraj objekat broja na osnovu nekog inputa, prvi parametar je broj koji se provjerava, drugi je objekat sa opcijama
-        // Treba ti generalno ovaj defaultCountry da biblioteka zna koje regexe da koristi
+        defaultCountry,
+    }
     let phoneNumber = libphonenumber.parsePhoneNumberFromString(inputNumber, constructorOptions)
     if (phoneNumber) {
         if (phoneNumber.isValid()) {
