@@ -157,6 +157,11 @@ textarea#form-textarea {
     cursor: pointer;
 }
 
+.footer-text {
+    padding-top: 50px;
+    font-family: "Montserrat", sans-serif;
+}
+
 @media only screen and (max-width: 900px) {
     .contact-header-middle h1 {
         font-size: 24px
