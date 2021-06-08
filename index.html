@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/libphonenumber-js@1.9.16/bundle/libphonenumber-min.js"></script>
+</head>
+
+<body>
+    <div class="contact-form">
+        <div class="contact-header">
+            <div class="contact-header-left">
+                <div class="chl-btns">
+                    <div class="chl-btn first"></div>
+                    <div class="chl-btn second"></div>
+                    <div class="chl-btn third"></div>
+                </div>
+            </div>
+            <div class="contact-header-middle">
+                <h1>Contact Form</h1>
+            </div>
+        </div>
+        <div class="contact-bot">
+            <form action="" id="form1">
+                <input type="text" id="form-name" placeholder="Name" required />
+                <br>
+                <p id="error-name" style="display: none;">Please enter your name - only letters are allowed</p>
+                <input type="text" id="form-number" placeholder="Phone No." required />
+                <br>
+                <p id="error-number" style="display: none;">Please enter your phone number - B&H format</p>
+                <input type="text" id="form-email" placeholder="Email" required />
+                <br>
+                <p id="error-email" style="display: none;">Please enter your e-mail address</p>
+                <textarea name="" id="form-textarea" placeholder="Message"></textarea>
+                <br>
+                <br>
+                <div class="cb-buttons">
+                    <button type="button" id="cancel">Cancel</button>
+                    <button type="button" id="send">Send</button>
+                </div>
+                <p id="info-form"></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
